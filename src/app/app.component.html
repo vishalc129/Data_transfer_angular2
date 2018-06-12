@@ -1,0 +1,13 @@
+<header>
+  <ul>
+    <li> <a routerLinkActive="active" [routerLink]="['/dashboard']" >Dashboard</a></li>
+    <li> <a routerLinkActive="active" [routerLink]="['/news']" >News</a></li>
+    <li> <a routerLinkActive="active" [routerLink]="['/careers']" >Careers</a></li>
+    <li> <a routerLinkActive="active" [routerLink]="['/about',{foo:aboutData}]">About</a></li>
+    <li> <a routerLinkActive="active" [routerLink]="['/contact',{foo:contactData}]">Conatct</a></li>
+  </ul>
+  <router-outlet></router-outlet>
+  <app-one></app-one>
+  <app-two></app-two>
+</header>
+
